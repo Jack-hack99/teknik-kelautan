@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Wix Madefor Display", sans-serif;
+  background-color: #010101;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+h3 {
+  color: #201658;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #201658;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.footer-col .social-media a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 10px 10px 0;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-media a:hover {
+  color: rgba(0, 3, 255, 0.8);
+  background-color: rgba(236, 236, 236, 0.8);
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: 25% 75%;
+  border-radius: 5px;
+}
+
+.featured-image2 {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 1px;
+  background-color: #201658;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.jumbotron .judul span {
+  color: #1d24ca;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #1d24ca;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+  word-spacing: 2px;
+  text-align: justify;
+  display: flex;
+  gap: 1.5rem;
+  color: black;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+#content .judul1 span {
+  color: #1d24ca;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+/* Perangkat dengan lebar layar 1000px dan di bawahnya */
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
